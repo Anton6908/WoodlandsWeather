@@ -30,8 +30,8 @@
         <link rel='stylesheet' href='//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' />
         <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css?ver=4.7.4' type='text/css' media='all' />
         <link rel='stylesheet' href='//stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css' type='text/css' media='all' />
-        <link rel='stylesheet' href='../style.css?ver=1775055637' type='text/css' media='all' id="belchertownStyle" />
-        <link rel='stylesheet' href='../belchertown-dark.min.css?ver=1775055637' type='text/css' media='all' id="belchertownStyle" />
+        <link rel='stylesheet' href='../style.css?ver=1775466056' type='text/css' media='all' id="belchertownStyle" />
+        <link rel='stylesheet' href='../belchertown-dark.min.css?ver=1775466056' type='text/css' media='all' id="belchertownStyle" />
 
         <link rel="manifest" href="../manifest.json" crossorigin="use-credentials">
         <link rel="apple-touch-icon" href="../images/station.png">
@@ -55,7 +55,7 @@
         <script type='text/javascript' src="//code.highcharts.com/10/modules/accessibility.js"></script>
         <script type='text/javascript' src='//code.highcharts.com/10/modules/solid-gauge.js'></script>
         <script type='text/javascript' src='//stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
-        <script type='text/javascript' src='../js/belchertown.js?1775055637'></script>
+        <script type='text/javascript' src='../js/belchertown.js?1775466056'></script>
         <script>
             // Set the session variables for the theme
             if ( sessionStorage.getItem('theme') === null ) {
@@ -81,7 +81,7 @@
                     <div class="title-area">
                         <p class="site-title" itemprop="headline">
                             <a href="../">
-                                Woodlands Farm, Weather Website
+                                <img src="images/logo2.png" id="logo_image" title="Woodlands Farm, N2, Grahamstown, EC, South Africa Weather Conditions" alt="Woodlands Farm, N2, Grahamstown, EC, South Africa Weather Conditions">
                             </a>
                         </p>
                     </div>
@@ -117,7 +117,7 @@
         <div class="col-sm-1 wx-stn-info-current-obs">
             <span class="obs-header-icon">
             </span>
-            <span class="obs-header-outtemp">22.9 &#176;C</span>
+            <span class="obs-header-outtemp">20.1 &#176;C</span>
         </div>
         <div class="col-sm-5">
             <div class="wx-stn-name">
@@ -126,27 +126,100 @@
         </div>
         <div class="col-sm-5" style="float:right;">
             <div class="wx-stn-info">
-                Observations are powered by a <a href='https://www.amazon.com/Davis-Instruments-Wireless-Radiation-WeatherLink/dp/B0BZT6KKN7?crid=BH4KL8PMRSNL&keywords=davis+vantage+pro+2+plus&qid=1700595434&sprefix=davis+vantage+pro+2+plus,aps,128&sr=8-3&ufe=app_do:amzn1.fos.765d4786-5719-48b9-b588-eab9385652d5&linkCode=sl1&tag=the0bb4-20&linkId=9f4a89ba1bf518a828a87d023739b166&language=en_US&ref_=as_li_ss_tl' target='_blank'>Davis Vantage Pro2 Plus</a> Personal Weather Station
+                Observations are powered by a <a href='https://www.amazon.com/Davis-Instruments-Wireless-Radiation-WeatherLink/dp/B0BZT6KKN7?crid=BH4KL8PMRSNL&keywords=davis+vantage+pro+2+plus&qid=1700595434&sprefix=davis+vantage+pro+2+plus,aps,128&sr=8-3&ufe=app_do:amzn1.fos.765d4786-5719-48b9-b588-eab9385652d5&linkCode=sl1&tag=the0bb4-20&linkId=9f4a89ba1bf518a828a87d023739b166&language=en_US&ref_=as_li_ss_tl' target='_blank'>Davis Vantage Pro2 Plus</a> Personal Weather Station. Currently, site updates every 3-5 minutes. <b>Work in progress to speed this up.</b>
             </div>
         </div>
     </div>
     <div class="clear"></div>
 </div>
 
+
+<script type='text/javascript'>showChart("about");</script>
 <div class="entry-content about-outer" itemprop="text">
-    <br>
-    <h2>Welcome to Woodlands Weather's about page!</h2>
-    </ul>
-    </p>
-    <p>Hardware and Software status:</p>
-    <ul>
-        <li>Station hardware: Vantage Pro2</li>
-        <li>Server uptime: 0 days, 17 hours, 34 minutes</li>
-        <li>WeeWX uptime: 0 days, 2 hours, 12 minutes</li>
-        <li>WeeWX version: 5.3.1</li>
-        <li>Belchertown Skin Version: 1.7beta2-new-belchertown</li>
-    </ul>
-    <p>For an example of what this page could say, please see <a href="https://belchertownweather.com/about" target="_blank">https://belchertownweather.com/about</a></p>
+
+    <div class="row" style="margin-top:15px;">
+
+        <div class="col-sm-4">
+            <img src="" alt="BelchertownWeather.com" title="BelchertownWeather.com">
+            <table style="font-size:80%; margin:0 auto; text-align:center; /*margin-left:-50px;*/">
+                <tbody>
+                    <tr>
+                        <td style="text-align:right; padding:4px 8px 0 0;">Hardware</td>
+                        <td style="text-align:left; font-weight:bold; padding-top:4px;">Vantage Pro2 Plus</td>
+                    </tr>
+                    <tr>
+                    </tr>
+                        <tr>
+                            <td style="text-align:right; padding:4px 8px 0 0;">Signal Quality</td>
+                            <td style="text-align:left; font-weight:bold; padding-top:4px;">96%</td>
+                        </tr>
+                    <tr>
+                      <td style="text-align:right; padding:4px 8px 0 0;">Transmitter Battery</td>
+                      <td style="text-align:left; font-weight:bold; padding-top:4px;">
+                        <span style="color:#44aa44;">OK</span>
+                      </td>
+                    </tr>
+                            <tr>
+                                <td style="text-align:right; padding:4px 8px 0 0;">Console Battery</td>
+                                <td style="text-align:left; font-weight:bold; padding-top:4px;">4.3 V</td>
+                            </tr>
+                    <tr>
+                        <td style="text-align:right; padding:4px 8px 0 0;">WeeWX version</td>
+                        <td style="text-align:left; font-weight:bold; padding-top:4px;">5.3.1</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right; padding:4px 8px 0 0;"><a href="https://belchertownweather.com/go/btowngithub" target="_blank">Belchertown skin</a> version</td>
+                        <td style="text-align:left; font-weight:bold; padding-top:4px;">1.7beta2-new-belchertown</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="rxchart" style="margin-top:30px;"></div>
+            <div id="rxchartyear" style="margin-top:30px;"></div>
+        </div>
+
+        <div class="col-sm-8" style="padding-top:10px;">
+            <p>This website is automatically updated in real time (about every 2-5 minutes) with weather observations from a <a href="https://belchertownweather.com/go/davisvp2" target="_blank">Davis Vantage Pro 2 Plus</a> personal weather station located in Belchertown, MA. Weather data is received by the Davis Console and weewx connects to a <a href="https://belchertownweather.com/go/weatherlinkip" target="_blank">Davis WeatherlinkIP</a> module to get archive data and the live website feeds. The weather station provides the following readings:</p>
+
+            <ul>
+                <li>Temperature</li>
+                <li>Humidity</li>
+                <li>Wind speed</li>
+                <li>Wind direction</li>
+                <li>Rainfall</li>
+                <li>UV</li>
+                <li>Solar radiation</li>
+                <li>Barometric Pressure</li>
+            </ul>
+
+            <p>The rest of the observations on this website are done via software calculations and quality control checks to make sure the data is valid.</p>
+            
+            <p>All weather observations are also posted to the following websites:</p>
+            <ul>
+                <li><a href="http://www.wunderground.com/personal-weather-station/dashboard?ID=IMAKAN6" target="_blank">IMAKAN6</a> on Weather Underground</li>
+                <li><a </a> </li>
+                <li><a </a> </li>
+            </ul>
+
+
+            <p>Software used:</p>
+            <ul>
+                <li><a href="http://www.weewx.com/" target="_blank">weewx</a> weather station software</li>
+                <li><a href="http://www.highcharts.com/" target="_blank">HighCharts</a> for the various charts on the website</li>
+                <li>The <a href="https://github.com/poblabs/weewx-belchertown" target="_blank">Belchertown skin</a> theme built for weewx</li>
+                <li><a href="https://mosquitto.org/" target="_blank">MQTT as the broker</a> for instant data transfer from weather station to website (Work in progress) </li>
+            </ul>
+
+            <p>Credits:</p>
+            <ul>
+                <li>Thanks to <a href="https://belchertownweather.com" target="_blank">Pat at BelchertownWeather.com</a> for this amazing website for weewx!</li>
+                <li>Forecast data <a href="https://darksky.net/poweredby/" target="_blank">Powered by Dark Sky</a></li>
+                <li>Earthquake data from <a href="http://earthquake.usgs.gov/fdsnws/event/1/">USGS.gov Earthquake Catalog Developer API</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+
+    </div>
+
 </div>
 
         </article>
@@ -175,7 +248,7 @@
 <script type='text/javascript' src='../js/responsive-menu.js'></script>
 
 <!-- Belchertown Skin Version: 1.7beta2-new-belchertown -->
-<!-- Page Generated: 01/04/26 17:00:00 -->
+<!-- Page Generated: 06/04/26 11:00:00 -->
 
 </body>
 

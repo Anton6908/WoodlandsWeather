@@ -36,8 +36,8 @@ if (getURLvar("debug") && (getURLvar("debug") == "true" || getURLvar("debug") ==
 var moment_locale = "en-GB";
 moment.locale(moment_locale);
 
-var graphgroups_raw = {"homepage": ["chart1", "chart2", "chart3", "chart4"], "day": ["chart1", "chart2", "chart3", "chart4"], "week": ["chart1", "chart2", "chart3", "chart4"], "month": ["chart1", "chart2", "chart3", "chart4"], "year": ["chart1", "chart2", "chart3", "chart4"]};
-var graphgroups_titles = {"homepage": "Homepage", "day": "Today", "week": "This Week", "month": "This Month", "year": "This Year"};
+var graphgroups_raw = {"about": ["rxchart", "rxchartyear"], "homepage": ["chart1", "chart2", "chart3", "chart4"], "day": ["chart1", "chart2", "chart3", "chart4"], "week": ["chart1", "chart2", "chart3", "chart4"], "month": ["chart1", "chart2", "chart3", "chart4"], "year": ["chart1", "chart2", "chart3", "chart4"]};
+var graphgroups_titles = {"about": "about", "homepage": "Homepage", "day": "Today", "week": "This Week", "month": "This Month", "year": "This Year"};
 var graphpage_content = {};
 
 //  declare icon_dict as global variable
@@ -122,7 +122,7 @@ jQuery(document).ready(function() {
             belchertown_debug("Theme: Setting auto theme because of URL override");
             sessionStorage.setItem('theme', 'auto')
             // 
-            autoTheme(18, 9, 6, 25)
+            autoTheme(18, 2, 6, 28)
             // 
         }
     }
@@ -494,6 +494,9 @@ function changeTheme(themeName, toggleOverride = false) {
         // 
         jQuery("#themeSwitch").prop("checked", false);
         // 
+        // 
+        belchertown_debug("Theme: logo_image is defined.");
+        jQuery("#logo_image").attr("src", "images/logo2.png");
         // 
         sessionStorage.setItem('currentTheme', 'light');
     }
