@@ -29,8 +29,8 @@
         <link rel='stylesheet' href='//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' />
         <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css?ver=4.7.4' type='text/css' media='all' />
         <link rel='stylesheet' href='//stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css' type='text/css' media='all' />
-        <link rel='stylesheet' href='../style.css?ver=1775026530' type='text/css' media='all' id="belchertownStyle" />
-        <link rel='stylesheet' href='../belchertown-dark.min.css?ver=1775026530' type='text/css' media='all' id="belchertownStyle" />
+        <link rel='stylesheet' href='../style.css?ver=1775026837' type='text/css' media='all' id="belchertownStyle" />
+        <link rel='stylesheet' href='../belchertown-dark.min.css?ver=1775026837' type='text/css' media='all' id="belchertownStyle" />
 
         <link rel="manifest" href="../manifest.json" crossorigin="use-credentials">
         <link rel="apple-touch-icon" href="../images/station.png">
@@ -54,7 +54,7 @@
         <script type='text/javascript' src="//code.highcharts.com/10/modules/accessibility.js"></script>
         <script type='text/javascript' src='//code.highcharts.com/10/modules/solid-gauge.js'></script>
         <script type='text/javascript' src='//stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
-        <script type='text/javascript' src='../js/belchertown.js?1775026530'></script>
+        <script type='text/javascript' src='../js/belchertown.js?1775026837'></script>
         <script>
             // Set the session variables for the theme
             if ( sessionStorage.getItem('theme') === null ) {
@@ -111,23 +111,23 @@
     moment.locale(moment_locale);
 
     jQuery(document).ready(function() {
-        jQuery("#year-outtemp-max-ts").text(tzAdjustedMoment(1775026481).format("LLL"));
-        jQuery("#at-outtemp-max-ts").text(tzAdjustedMoment(1775026481).format("LLL"));
+        jQuery("#year-outtemp-max-ts").text(tzAdjustedMoment(1775026615).format("LLL"));
+        jQuery("#at-outtemp-max-ts").text(tzAdjustedMoment(1775026615).format("LLL"));
 
         jQuery("#year-outtemp-min-ts").text(tzAdjustedMoment(1774757400).format("LLL"));
         jQuery("#at-outtemp-min-ts").text(tzAdjustedMoment(1774757400).format("LLL"));
 
         // 
-        jQuery("#year-apptemp-max-ts").text(tzAdjustedMoment(1775026432).format("LLL"));
+        jQuery("#year-apptemp-max-ts").text(tzAdjustedMoment(1775026623).format("LLL"));
         jQuery("#year-apptemp-min-ts").text(tzAdjustedMoment(1774757400).format("LLL"));
         // 
         // 
-        jQuery("#at-apptemp-max-ts").text(tzAdjustedMoment(1775026432).format("LLL"));
+        jQuery("#at-apptemp-max-ts").text(tzAdjustedMoment(1775026623).format("LLL"));
         jQuery("#at-apptemp-min-ts").text(tzAdjustedMoment(1774757400).format("LLL"));
         // 
 
-        jQuery("#year-heatindex-max-ts").text(tzAdjustedMoment(1775026433).format("LLL"));
-        jQuery("#at-heatindex-max-ts").text(tzAdjustedMoment(1775026433).format("LLL"));
+        jQuery("#year-heatindex-max-ts").text(tzAdjustedMoment(1775026623).format("LLL"));
+        jQuery("#at-heatindex-max-ts").text(tzAdjustedMoment(1775026623).format("LLL"));
 
         jQuery("#year-windchill-min-ts").text(tzAdjustedMoment(1774757400).format("LLL"));
         jQuery("#at-windchill-min-ts").text(tzAdjustedMoment(1774757400).format("LLL"));
@@ -217,7 +217,7 @@
         <div class="col-sm-1 wx-stn-info-current-obs">
             <span class="obs-header-icon">
             </span>
-            <span class="obs-header-outtemp">27.7 &#176;C</span>
+            <span class="obs-header-outtemp">27.8 &#176;C</span>
         </div>
         <div class="col-sm-5">
             <div class="wx-stn-name">
@@ -254,9 +254,9 @@
                         </tr>
                         <tr>
                             <td>Highest Temperature</td>
-                            <td class="leftborder">27.7 &#176;C</td>
+                            <td class="leftborder">27.9 &#176;C</td>
                             <td><span id="year-outtemp-max-ts"></span></td><!-- moment.js -->
-                            <td class="leftborder">27.7 &#176;C</td>
+                            <td class="leftborder">27.9 &#176;C</td>
                             <td><span id="at-outtemp-max-ts"></span></td><!-- moment.js -->
                         </tr>
                         <tr>
@@ -268,9 +268,9 @@
                         </tr>
                         <tr>
                             <td>Highest Apparent Temperature</td>
-                            <td class="leftborder">32.5 &#176;C</td>
+                            <td class="leftborder">32.7 &#176;C</td>
                             <td id="year-apptemp-max-ts"></td><!-- moment.js -->
-                            <td class="leftborder">32.5 &#176;C</td>
+                            <td class="leftborder">32.7 &#176;C</td>
                             <td id="at-apptemp-max-ts"></td><!-- moment.js -->
                         </tr>
                         <tr>
@@ -282,9 +282,9 @@
                         </tr>
                         <tr>
                             <td>Highest Heat Index</td>
-                            <td class="leftborder">30.3 &#176;C</td>
+                            <td class="leftborder">30.6 &#176;C</td>
                             <td id="year-heatindex-max-ts"></td><!-- moment.js -->
-                            <td class="leftborder">30.3 &#176;C</td>
+                            <td class="leftborder">30.6 &#176;C</td>
                             <td id="at-heatindex-max-ts"></td><!-- moment.js -->
                         </tr>
                         <tr>
@@ -508,7 +508,7 @@
 <script type='text/javascript' src='../js/responsive-menu.js'></script>
 
 <!-- Belchertown Skin Version: 1.7beta2-new-belchertown -->
-<!-- Page Generated: 01/04/26 08:55:00 -->
+<!-- Page Generated: 01/04/26 09:00:00 -->
 
 </body>
 
