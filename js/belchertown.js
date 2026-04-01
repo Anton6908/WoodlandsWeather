@@ -1130,7 +1130,7 @@ function update_current_conditions(data) {
 
         // Visibility text in station observation table
         try {
-            if (("ca" == "si") || ("ca" == "ca")) {
+            if (("us" == "si") || ("us" == "ca")) {
                 // si and ca = kilometer
                 visibility = current_conditions_data["visibilityKM"];
 
@@ -1257,7 +1257,7 @@ function update_forecast_data(data) {
                 }
 
                 // Determine temperature units
-                if (("ca" == "ca") || ("ca" == "uk2") || ("ca" == "si")) {
+                if (("us" == "ca") || ("us" == "uk2") || ("us" == "si")) {
                     avgTemp = data[(forecast_interval)][0]["response"][0]["periods"][i]["avgTempC"];
                     minTemp = data[(forecast_interval)][0]["response"][0]["periods"][i]["minTempC"];
                     maxTemp = data[(forecast_interval)][0]["response"][0]["periods"][i]["maxTempC"];
@@ -1288,11 +1288,11 @@ function update_forecast_data(data) {
                 } else if ("meter_per_second" == "beaufort") {
                     windSpeed = kts_to_beaufort(data[(forecast_interval)][0]["response"][0]["periods"][i]["windSpeedKTS"]);
                     windGust = kts_to_beaufort(data[(forecast_interval)][0]["response"][0]["periods"][i]["windGustKTS"]);
-                } else if ("ca" == "ca") {
+                } else if ("us" == "ca") {
                     // ca = kph
                     windSpeed = data[(forecast_interval)][0]["response"][0]["periods"][i]["windSpeedKPH"];
                     windGust = data[(forecast_interval)][0]["response"][0]["periods"][i]["windGustKPH"];
-                } else if ("ca" == "si") {
+                } else if ("us" == "si") {
                     // si = meters per second. MPS is KPH / 3.6
                     windSpeed = data[(forecast_interval)][0]["response"][0]["periods"][i]["windSpeedKPH"] / 3.6;
                     windGust = data[(forecast_interval)][0]["response"][0]["periods"][i]["windGustKPH"] / 3.6;
@@ -1316,7 +1316,7 @@ function update_forecast_data(data) {
                 to always return a number. We still convert to 0 if we ever get
                 null.
                 */
-                if (("ca" == "si") || ("ca" == "ca") || ("ca" == "uk2")) {
+                if (("us" == "si") || ("us" == "ca") || ("us" == "uk2")) {
                     var snow_depth = data[(forecast_interval)][0]["response"][0]["periods"][i]["snowCM"] || 0;
                     var snow_unit = "cm";
                 } else {
