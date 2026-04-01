@@ -4,6 +4,44 @@
     "type": "line",
     "colors": "#7cb5ec, #b2df8a, #f7a35c, #8c6bb1, #dd3497, #e4d354, #268bd2, #f45b5b, #6a3d9a, #33a02c",
     "tooltip_date_format": "LLL",
+    "about": {
+        "show_button": "false",
+        "time_length": "172800",
+        "aggregate_type": "last",
+        "aggregate_interval": "300",
+        "gapsize": "300000",
+        "rxchart": {
+            "title": "ISS Receive Stats",
+            "yAxis_max": "100",
+            "rxCheckPercent": {
+                "color": "#268bd2"
+            }
+        },
+        "rxchartyear": {
+            "title": "ISS Receive Stats Average",
+            "yAxis_max": "100",
+            "xAxis_groupby": "month",
+            "xAxis_categories": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec"
+            ],
+            "time_length": "year",
+            "rxCheckPercent": {
+                "aggregate_type": "avg",
+                "color": "#268bd2"
+            }
+        }
+    },
     "homepage": {
         "title": "Homepage",
         "show_button": "true",
