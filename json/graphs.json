@@ -68,6 +68,33 @@
                 "yAxis_tickInterval": "0.01"
             }
         },
+        "chart5": {
+            "title": "Solar Radiation & UV",
+            "type": "areaspline",
+            "yAxis_label": "Solar Radiation (W/m\u00b2)",
+            "radiation": {
+                "name": "Solar Radiation",
+                "color": "#ffc83f",
+                "zIndex": "2",
+                "fillOpacity": "0.65"
+            },
+            "maxSolarRad": {
+                "name": "Theoretical Max",
+                "type": "area",
+                "color": "#ffe680",
+                "fillOpacity": "0.30",
+                "zIndex": "1"
+            },
+            "UV": {
+                "name": "UV Index",
+                "color": "#90ed7d",
+                "zIndex": "3",
+                "yAxis": "1",
+                "yAxis_label": "UV Index",
+                "yAxis_min": "0",
+                "yAxis_max": "12"
+            }
+        },
         "chart6": {
             "title": "Indoor",
             "inTemp": {
@@ -186,6 +213,33 @@
                 "color": "#BECC00"
             }
         },
+        "chart5": {
+            "title": "Solar Radiation & UV",
+            "type": "areaspline",
+            "yAxis_label": "Solar Radiation (W/m\u00b2)",
+            "radiation": {
+                "name": "Solar Radiation",
+                "color": "#ffc83f",
+                "zIndex": "2",
+                "fillOpacity": "0.65"
+            },
+            "maxSolarRad": {
+                "name": "Theoretical Max",
+                "type": "area",
+                "color": "#ffe680",
+                "fillOpacity": "0.30",
+                "zIndex": "1"
+            },
+            "UV": {
+                "name": "UV Index",
+                "color": "#90ed7d",
+                "zIndex": "3",
+                "yAxis": "1",
+                "yAxis_label": "UV Index",
+                "yAxis_min": "0",
+                "yAxis_max": "12"
+            }
+        },
         "chart6": {
             "title": "Indoor",
             "inTemp": {
@@ -261,6 +315,33 @@
             "type": "spline",
             "barometer": {
                 "color": "#BECC00"
+            }
+        },
+        "chart5": {
+            "title": "Solar Radiation & UV",
+            "type": "areaspline",
+            "yAxis_label": "Solar Radiation (W/m\u00b2)",
+            "radiation": {
+                "name": "Solar Radiation",
+                "color": "#ffc83f",
+                "zIndex": "2",
+                "fillOpacity": "0.65"
+            },
+            "maxSolarRad": {
+                "name": "Theoretical Max",
+                "type": "area",
+                "color": "#ffe680",
+                "fillOpacity": "0.30",
+                "zIndex": "1"
+            },
+            "UV": {
+                "name": "UV Index",
+                "color": "#90ed7d",
+                "zIndex": "3",
+                "yAxis": "1",
+                "yAxis_label": "UV Index",
+                "yAxis_min": "0",
+                "yAxis_max": "12"
             }
         },
         "chart6": {
@@ -343,6 +424,33 @@
                 "color": "#BECC00"
             }
         },
+        "chart5": {
+            "title": "Solar Radiation & UV",
+            "type": "areaspline",
+            "yAxis_label": "Solar Radiation (W/m\u00b2)",
+            "radiation": {
+                "name": "Solar Radiation",
+                "color": "#ffc83f",
+                "zIndex": "2",
+                "fillOpacity": "0.65"
+            },
+            "maxSolarRad": {
+                "name": "Theoretical Max",
+                "type": "area",
+                "color": "#ffe680",
+                "fillOpacity": "0.30",
+                "zIndex": "1"
+            },
+            "UV": {
+                "name": "UV Index",
+                "color": "#90ed7d",
+                "zIndex": "3",
+                "yAxis": "1",
+                "yAxis_label": "UV Index",
+                "yAxis_min": "0",
+                "yAxis_max": "12"
+            }
+        },
         "chart6": {
             "title": "Indoor",
             "inTemp": {
@@ -421,6 +529,33 @@
             "barometer": {
                 "color": "#BECC00"
             }
+        },
+        "chart5": {
+            "title": "Solar Radiation & UV",
+            "type": "areaspline",
+            "yAxis_label": "Solar Radiation (W/m\u00b2)",
+            "radiation": {
+                "name": "Solar Radiation",
+                "color": "#ffc83f",
+                "zIndex": "2",
+                "fillOpacity": "0.65"
+            },
+            "maxSolarRad": {
+                "name": "Theoretical Max",
+                "type": "area",
+                "color": "#ffe680",
+                "fillOpacity": "0.30",
+                "zIndex": "1"
+            },
+            "UV": {
+                "name": "UV Index",
+                "color": "#90ed7d",
+                "zIndex": "3",
+                "yAxis": "1",
+                "yAxis_label": "UV Index",
+                "yAxis_min": "0",
+                "yAxis_max": "12"
+            }
         }
     },
     "year": {
@@ -486,6 +621,33 @@
             "aggregate_type": "avg",
             "barometer": {
                 "color": "#BECC00"
+            }
+        },
+        "chart5": {
+            "title": "Solar Radiation & UV",
+            "type": "areaspline",
+            "yAxis_label": "Solar Radiation (W/m\u00b2)",
+            "radiation": {
+                "name": "Solar Radiation",
+                "color": "#ffc83f",
+                "zIndex": "2",
+                "fillOpacity": "0.65"
+            },
+            "maxSolarRad": {
+                "name": "Theoretical Max",
+                "type": "area",
+                "color": "#ffe680",
+                "fillOpacity": "0.30",
+                "zIndex": "1"
+            },
+            "UV": {
+                "name": "UV Index",
+                "color": "#90ed7d",
+                "zIndex": "3",
+                "yAxis": "1",
+                "yAxis_label": "UV Index",
+                "yAxis_min": "0",
+                "yAxis_max": "12"
             }
         },
         "avgclimatethisyear": {

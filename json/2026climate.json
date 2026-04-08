@@ -1,6 +1,6 @@
 {
     "belchertown_version": "1.7beta2-new-belchertown",
-    "generated_timestamp": "04/08/2026 17:25:35",
+    "generated_timestamp": "04/09/2026 09:20:37",
     "colors": "#7cb5ec, #b2df8a, #f7a35c, #8c6bb1, #dd3497, #e4d354, #268bd2, #f45b5b, #6a3d9a, #33a02c",
     "chartgroup_title": "Average Climatological Values for 2026",
     "tooltip_date_format": "LLL",
@@ -67,8 +67,8 @@
                         31.17
                     ],
                     [
-                        1775685600000.0,
-                        null
+                        1775728800000.0,
+                        25.11
                     ],
                     [
                         1775772000000.0,
@@ -1196,8 +1196,8 @@
                         14.33
                     ],
                     [
-                        1775685600000.0,
-                        null
+                        1775728800000.0,
+                        21.78
                     ],
                     [
                         1775772000000.0,
@@ -2321,8 +2321,8 @@
                         11.6
                     ],
                     [
-                        1775685600000.0,
-                        null
+                        1775728800000.0,
+                        11.6
                     ],
                     [
                         1775772000000.0,
