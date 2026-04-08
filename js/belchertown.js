@@ -36,7 +36,7 @@ if (getURLvar("debug") && (getURLvar("debug") == "true" || getURLvar("debug") ==
 var moment_locale = "en-GB";
 moment.locale(moment_locale);
 
-var graphgroups_raw = {"homepage": ["chart1", "chart2", "chart3", "chart4", "chart6", "avgclimatethisyear"], "day": ["chart1", "chart2", "chart3", "chart4", "chart6"], "yesterday": ["chart1", "chart2", "chart3", "chart4", "chart6"], "week": ["chart1", "chart2", "chart3", "chart4", "chart6"], "month": ["chart1", "chart2", "chart3", "chart4"], "year": ["chart1", "chart2", "chart3", "chart4", "avgclimatethisyear"], "2026climate": ["chart1"], "raintotals": ["rainmonthtotals", "rainyeartotals", "rain2026totals"]};
+var graphgroups_raw = {"homepage": ["chart1", "chart2", "chart3", "chart4", "chart5", "chart6", "avgclimatethisyear"], "day": ["chart1", "chart2", "chart3", "chart4", "chart5", "chart6"], "yesterday": ["chart1", "chart2", "chart3", "chart4", "chart5", "chart6"], "week": ["chart1", "chart2", "chart3", "chart4", "chart5", "chart6"], "month": ["chart1", "chart2", "chart3", "chart4", "chart5"], "year": ["chart1", "chart2", "chart3", "chart4", "chart5", "avgclimatethisyear"], "2026climate": ["chart1"], "raintotals": ["rainmonthtotals", "rainyeartotals", "rain2026totals"]};
 var graphgroups_titles = {"homepage": "Homepage", "day": "Today", "yesterday": "Yesterday", "week": "This Week", "month": "This Month", "year": "This Year", "2026climate": "Average Climatological Values for 2026", "raintotals": "Rain Totals by Month"};
 var graphpage_content = {};
 
@@ -122,7 +122,7 @@ jQuery(document).ready(function() {
             belchertown_debug("Theme: Setting auto theme because of URL override");
             sessionStorage.setItem('theme', 'auto')
             // 
-            autoTheme(17, 59, 6, 30)
+            autoTheme(17, 58, 6, 30)
             // 
         }
     }
