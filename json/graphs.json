@@ -12,7 +12,16 @@
         "tooltip_date_format": "LLL",
         "gapsize": "300000",
         "connectNulls": "true",
-        "chart1": {
+        "Rain": {
+            "title": "Rain",
+            "rainRate": {
+                "yAxis": "1"
+            },
+            "rainTotal": {
+                "name": "Rain Total"
+            }
+        },
+        "Outdoor": {
             "title": "Outdoor",
             "outTemp": {
                 "zIndex": "1",
@@ -29,7 +38,20 @@
                 "color": "#91e8e1"
             }
         },
-        "chart2": {
+        "Indoor": {
+            "title": "Indoor",
+            "inTemp": {
+                "zIndex": "1",
+                "name": "Indoor Temperature"
+            },
+            "inHumidity": {
+                "yAxis": "1",
+                "yaxis_min": "1",
+                "yaxis_max": "99",
+                "color": "#91e8e1"
+            }
+        },
+        "Wind": {
             "title": "Wind Speed and Direction",
             "yaxis_min": "0",
             "windDir": {
@@ -51,16 +73,7 @@
                 "zIndex": "2"
             }
         },
-        "chart3": {
-            "title": "Rain",
-            "rainRate": {
-                "yAxis": "1"
-            },
-            "rainTotal": {
-                "name": "Rain Total"
-            }
-        },
-        "chart4": {
+        "Barometer": {
             "title": "Barometer",
             "type": "spline",
             "barometer": {
@@ -68,7 +81,7 @@
                 "yAxis_tickInterval": "0.01"
             }
         },
-        "chart5": {
+        "Solar": {
             "title": "Solar Radiation & UV",
             "type": "areaspline",
             "yAxis_label": "Solar Radiation (W/m\u00b2)",
@@ -93,19 +106,6 @@
                 "yAxis_label": "UV Index",
                 "yAxis_min": "0",
                 "yAxis_max": "12"
-            }
-        },
-        "chart6": {
-            "title": "Indoor",
-            "inTemp": {
-                "zIndex": "1",
-                "name": "Indoor Temperature"
-            },
-            "inHumidity": {
-                "yAxis": "1",
-                "yaxis_min": "1",
-                "yaxis_max": "99",
-                "color": "#91e8e1"
             }
         },
         "avgclimatethisyear": {
@@ -150,110 +150,6 @@
             }
         }
     },
-    "day": {
-        "title": "Today",
-        "show_button": "true",
-        "button_text": "Day",
-        "time_length": "today",
-        "tooltip_date_format": "LLL",
-        "gapsize": "300000",
-        "connectNulls": "true",
-        "chart1": {
-            "title": "Outdoor",
-            "outTemp": {
-                "zIndex": "1",
-                "name": "Temperature"
-            },
-            "windchill": {},
-            "dewpoint": {
-                "color": "purple"
-            },
-            "outHumidity": {
-                "yAxis": "1",
-                "yaxis_min": "1",
-                "yaxis_max": "99",
-                "color": "#91e8e1"
-            }
-        },
-        "chart2": {
-            "title": "Wind Speed and Direction",
-            "yaxis_min": "0",
-            "windDir": {
-                "zIndex": "1",
-                "yAxis": "1",
-                "yaxis_max": "360",
-                "lineWidth": "0",
-                "marker": {
-                    "enabled": "true"
-                },
-                "states": {
-                    "hover": {
-                        "lineWidthPlus": 0.0
-                    }
-                }
-            },
-            "windGust": {},
-            "windSpeed": {
-                "zIndex": "2"
-            }
-        },
-        "chart3": {
-            "title": "Rain",
-            "rainRate": {
-                "yAxis": "1"
-            },
-            "rainTotal": {
-                "name": "Rain Total"
-            }
-        },
-        "chart4": {
-            "title": "Barometer",
-            "type": "spline",
-            "barometer": {
-                "color": "#BECC00"
-            }
-        },
-        "chart5": {
-            "title": "Solar Radiation & UV",
-            "type": "areaspline",
-            "yAxis_label": "Solar Radiation (W/m\u00b2)",
-            "radiation": {
-                "name": "Solar Radiation",
-                "color": "#ffc83f",
-                "zIndex": "2",
-                "fillOpacity": "0.65"
-            },
-            "maxSolarRad": {
-                "name": "Theoretical Max",
-                "type": "area",
-                "color": "#ffe680",
-                "fillOpacity": "0.30",
-                "zIndex": "1"
-            },
-            "UV": {
-                "name": "UV Index",
-                "color": "#90ed7d",
-                "zIndex": "3",
-                "yAxis": "1",
-                "yAxis_label": "UV Index",
-                "yAxis_min": "0",
-                "yAxis_max": "12"
-            }
-        },
-        "chart6": {
-            "title": "Indoor",
-            "inTemp": {
-                "zIndex": "1",
-                "name": "Indoor Temperature"
-            },
-            "inHumidity": {
-                "yAxis": "1",
-                "yaxis_min": "1",
-                "yaxis_max": "99",
-                "color": "#91e8e1"
-            }
-        }
-    },
     "yesterday": {
         "title": "Yesterday",
         "show_button": "true",
@@ -262,7 +158,16 @@
         "time_ago": "1",
         "gapsize": "300000",
         "connectNulls": "true",
-        "chart1": {
+        "Rain": {
+            "title": "Rain",
+            "rainRate": {
+                "yAxis": "1"
+            },
+            "rainTotal": {
+                "name": "Rain Total"
+            }
+        },
+        "Outdoor": {
             "title": "Outdoor",
             "outTemp": {
                 "zIndex": "1",
@@ -279,7 +184,20 @@
                 "color": "#91e8e1"
             }
         },
-        "chart2": {
+        "Indoor": {
+            "title": "Indoor",
+            "inTemp": {
+                "zIndex": "1",
+                "name": "Indoor Temperature"
+            },
+            "inHumidity": {
+                "yAxis": "1",
+                "yaxis_min": "1",
+                "yaxis_max": "99",
+                "color": "#91e8e1"
+            }
+        },
+        "Wind": {
             "title": "Wind Speed and Direction",
             "yaxis_min": "0",
             "windDir": {
@@ -301,23 +219,14 @@
                 "zIndex": "2"
             }
         },
-        "chart3": {
-            "title": "Rain",
-            "rainRate": {
-                "yAxis": "1"
-            },
-            "rainTotal": {
-                "name": "Rain Total"
-            }
-        },
-        "chart4": {
+        "Barometer": {
             "title": "Barometer",
             "type": "spline",
             "barometer": {
                 "color": "#BECC00"
             }
         },
-        "chart5": {
+        "Solar": {
             "title": "Solar Radiation & UV",
             "type": "areaspline",
             "yAxis_label": "Solar Radiation (W/m\u00b2)",
@@ -343,8 +252,43 @@
                 "yAxis_min": "0",
                 "yAxis_max": "12"
             }
+        }
+    },
+    "day": {
+        "title": "Today",
+        "show_button": "true",
+        "button_text": "Today",
+        "time_length": "today",
+        "tooltip_date_format": "LLL",
+        "gapsize": "300000",
+        "connectNulls": "true",
+        "Rain": {
+            "title": "Rain",
+            "rainRate": {
+                "yAxis": "1"
+            },
+            "rainTotal": {
+                "name": "Rain Total"
+            }
         },
-        "chart6": {
+        "Outdoor": {
+            "title": "Outdoor",
+            "outTemp": {
+                "zIndex": "1",
+                "name": "Temperature"
+            },
+            "windchill": {},
+            "dewpoint": {
+                "color": "purple"
+            },
+            "outHumidity": {
+                "yAxis": "1",
+                "yaxis_min": "1",
+                "yaxis_max": "99",
+                "color": "#91e8e1"
+            }
+        },
+        "Indoor": {
             "title": "Indoor",
             "inTemp": {
                 "zIndex": "1",
@@ -355,6 +299,62 @@
                 "yaxis_min": "1",
                 "yaxis_max": "99",
                 "color": "#91e8e1"
+            }
+        },
+        "Wind": {
+            "title": "Wind Speed and Direction",
+            "yaxis_min": "0",
+            "windDir": {
+                "zIndex": "1",
+                "yAxis": "1",
+                "yaxis_max": "360",
+                "lineWidth": "0",
+                "marker": {
+                    "enabled": "true"
+                },
+                "states": {
+                    "hover": {
+                        "lineWidthPlus": 0.0
+                    }
+                }
+            },
+            "windGust": {},
+            "windSpeed": {
+                "zIndex": "2"
+            }
+        },
+        "Barometer": {
+            "title": "Barometer",
+            "type": "spline",
+            "barometer": {
+                "color": "#BECC00"
+            }
+        },
+        "Solar": {
+            "title": "Solar Radiation & UV",
+            "type": "areaspline",
+            "yAxis_label": "Solar Radiation (W/m\u00b2)",
+            "radiation": {
+                "name": "Solar Radiation",
+                "color": "#ffc83f",
+                "zIndex": "2",
+                "fillOpacity": "0.65"
+            },
+            "maxSolarRad": {
+                "name": "Theoretical Max",
+                "type": "area",
+                "color": "#ffe680",
+                "fillOpacity": "0.30",
+                "zIndex": "1"
+            },
+            "UV": {
+                "name": "UV Index",
+                "color": "#90ed7d",
+                "zIndex": "3",
+                "yAxis": "1",
+                "yAxis_label": "UV Index",
+                "yAxis_min": "0",
+                "yAxis_max": "12"
             }
         }
     },
@@ -368,7 +368,16 @@
         "aggregate_interval": "3600",
         "gapsize": "3600000",
         "connectNulls": "true",
-        "chart1": {
+        "Rain": {
+            "title": "Rain",
+            "rainRate": {
+                "yAxis": "1"
+            },
+            "rainTotal": {
+                "name": "Rain Total"
+            }
+        },
+        "Outdoor": {
             "title": "Outdoor",
             "outTemp": {
                 "zIndex": "1",
@@ -385,7 +394,20 @@
                 "color": "#91e8e1"
             }
         },
-        "chart2": {
+        "Indoor": {
+            "title": "Indoor",
+            "inTemp": {
+                "zIndex": "1",
+                "name": "Indoor Temperature"
+            },
+            "inHumidity": {
+                "yAxis": "1",
+                "yaxis_min": "1",
+                "yaxis_max": "99",
+                "color": "#91e8e1"
+            }
+        },
+        "Wind": {
             "title": "Wind Speed and Direction",
             "yaxis_min": "0",
             "windDir": {
@@ -408,23 +430,14 @@
                 "zIndex": "2"
             }
         },
-        "chart3": {
-            "title": "Rain",
-            "rainRate": {
-                "yAxis": "1"
-            },
-            "rainTotal": {
-                "name": "Rain Total"
-            }
-        },
-        "chart4": {
+        "Barometer": {
             "title": "Barometer",
             "aggregate_type": "avg",
             "barometer": {
                 "color": "#BECC00"
             }
         },
-        "chart5": {
+        "Solar": {
             "title": "Solar Radiation & UV",
             "type": "areaspline",
             "yAxis_label": "Solar Radiation (W/m\u00b2)",
@@ -449,19 +462,6 @@
                 "yAxis_label": "UV Index",
                 "yAxis_min": "0",
                 "yAxis_max": "12"
-            }
-        },
-        "chart6": {
-            "title": "Indoor",
-            "inTemp": {
-                "zIndex": "1",
-                "name": "Indoor Temperature"
-            },
-            "inHumidity": {
-                "yAxis": "1",
-                "yaxis_min": "1",
-                "yaxis_max": "99",
-                "color": "#91e8e1"
             }
         }
     },
@@ -476,7 +476,17 @@
         "aggregate_interval": "86400",
         "gapsize": "86400000",
         "connectNulls": "true",
-        "chart1": {
+        "Rain": {
+            "title": "Rain",
+            "type": "line",
+            "rainRate": {
+                "yAxis": "1"
+            },
+            "rainTotal": {
+                "name": "Rain Total"
+            }
+        },
+        "Temperature": {
             "title": "Temperature",
             "outTemp": {
                 "zIndex": "1",
@@ -490,7 +500,7 @@
                 "color": "#7cb5ec"
             }
         },
-        "chart2": {
+        "Wind": {
             "title": "Wind Speed and Direction",
             "yaxis_min": "0",
             "windDir": {
@@ -513,24 +523,14 @@
                 "zIndex": "2"
             }
         },
-        "chart3": {
-            "title": "Rain",
-            "type": "line",
-            "rainRate": {
-                "yAxis": "1"
-            },
-            "rainTotal": {
-                "name": "Rain Total"
-            }
-        },
-        "chart4": {
+        "Barometer": {
             "title": "Barometer",
             "aggregate_type": "avg",
             "barometer": {
                 "color": "#BECC00"
             }
         },
-        "chart5": {
+        "Solar": {
             "title": "Solar Radiation & UV",
             "type": "areaspline",
             "yAxis_label": "Solar Radiation (W/m\u00b2)",
@@ -569,7 +569,17 @@
         "aggregate_interval": "86400",
         "gapsize": "86400000",
         "connectNulls": "true",
-        "chart1": {
+        "Rain": {
+            "title": "Rain",
+            "type": "line",
+            "rainRate": {
+                "yAxis": "1"
+            },
+            "rainTotal": {
+                "name": "Rain Total"
+            }
+        },
+        "Temperature": {
             "title": "Temperature",
             "outTemp": {
                 "zIndex": "1",
@@ -583,7 +593,7 @@
                 "color": "#7cb5ec"
             }
         },
-        "chart2": {
+        "Wind": {
             "title": "Wind Speed and Direction",
             "yaxis_min": "0",
             "windDir": {
@@ -606,24 +616,14 @@
                 "zIndex": "2"
             }
         },
-        "chart3": {
-            "title": "Rain",
-            "type": "line",
-            "rainRate": {
-                "yAxis": "1"
-            },
-            "rainTotal": {
-                "name": "Rain Total"
-            }
-        },
-        "chart4": {
+        "Barometer": {
             "title": "Barometer",
             "aggregate_type": "avg",
             "barometer": {
                 "color": "#BECC00"
             }
         },
-        "chart5": {
+        "Solar": {
             "title": "Solar Radiation & UV",
             "type": "areaspline",
             "yAxis_label": "Solar Radiation (W/m\u00b2)",
@@ -717,7 +717,7 @@
             "Nov",
             "Dec"
         ],
-        "chart1": {
+        "Climate": {
             "title": "Average Climatological Values for 2026",
             "outTemp": {
                 "zIndex": "2",
@@ -749,13 +749,79 @@
         }
     },
     "raintotals": {
-        "title": "Rain Totals by Month",
+        "title": "Rain Totals by Period",
         "show_button": "true",
         "button_text": "Rain Totals",
         "type": "column",
         "time_length": "all",
         "aggregate_type": "max",
         "aggregate_interval": "86400",
+        "raintoday": {
+            "title": "Rain Today",
+            "subtitle": "5-minute intervals + cumulative total",
+            "type": "column",
+            "time_length": "today",
+            "gapsize": "300",
+            "aggregate_type": "sum",
+            "aggregate_interval": "300",
+            "tooltip_date_format": "HH:mm",
+            "rain": {
+                "name": "Rain per 5 min (mm)",
+                "color": "#438bd6",
+                "yAxis_min": "0"
+            },
+            "rainTotal": {
+                "name": "Cumulative Rain Today (mm)",
+                "type": "line",
+                "color": "#ff0000",
+                "zIndex": "3",
+                "yAxis": "1"
+            }
+        },
+        "rainthisweek": {
+            "title": "Rain This Week",
+            "subtitle": "Hourly bars + cumulative total (Mon\u2013Sun)",
+            "type": "column",
+            "time_length": "week",
+            "gapsize": "3600",
+            "aggregate_type": "sum",
+            "aggregate_interval": "3600",
+            "tooltip_date_format": "dddd HH:mm",
+            "rain": {
+                "name": "Rain per hour (mm)",
+                "color": "#438bd6",
+                "yAxis_min": "0"
+            },
+            "rainTotal": {
+                "name": "Cumulative Rain This Week (mm)",
+                "type": "line",
+                "color": "#ff0000",
+                "zIndex": "3",
+                "lineWidth": "3"
+            }
+        },
+        "rainthismonth": {
+            "title": "Rain This Month",
+            "subtitle": "Daily bars + cumulative total (Jan\u2013Dec)",
+            "type": "column",
+            "time_length": "month",
+            "gapsize": "86400",
+            "aggregate_type": "sum",
+            "aggregate_interval": "86400",
+            "tooltip_date_format": "dddd DD MMM",
+            "rain": {
+                "name": "Rain per day (mm)",
+                "color": "#438bd6",
+                "yAxis_min": "0"
+            },
+            "rainTotal": {
+                "name": "Cumulative Rain This Month (mm)",
+                "type": "line",
+                "color": "#ff0000",
+                "zIndex": "3",
+                "lineWidth": "3"
+            }
+        },
         "rainmonthtotals": {
             "title": "Historical Rain Totals By Month",
             "subtitle": "Rain Totals for All Months for All Time",
