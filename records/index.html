@@ -31,8 +31,8 @@
         <link rel='stylesheet' href='//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' />
         <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css?ver=4.7.4' type='text/css' media='all' />
         <link rel='stylesheet' href='//stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css' type='text/css' media='all' />
-        <link rel='stylesheet' href='../style.css?ver=1776414032' type='text/css' media='all' id="belchertownStyle" />
-        <link rel='stylesheet' href='../belchertown-dark.min.css?ver=1776414032' type='text/css' media='all' id="belchertownStyle" />
+        <link rel='stylesheet' href='../style.css?ver=1776492635' type='text/css' media='all' id="belchertownStyle" />
+        <link rel='stylesheet' href='../belchertown-dark.min.css?ver=1776492635' type='text/css' media='all' id="belchertownStyle" />
 
         <link rel="manifest" href="../manifest.json" crossorigin="use-credentials">
         <link rel="apple-touch-icon" href="../images/station.png">
@@ -56,7 +56,7 @@
         <script type='text/javascript' src="//code.highcharts.com/10/modules/accessibility.js"></script>
         <script type='text/javascript' src='//code.highcharts.com/10/modules/solid-gauge.js'></script>
         <script type='text/javascript' src='//stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
-        <script type='text/javascript' src='../js/belchertown.js?1776414032'></script>
+        <script type='text/javascript' src='../js/belchertown.js?1776492635'></script>
         <script>
             // Set the session variables for the theme
             if ( sessionStorage.getItem('theme') === null ) {
@@ -122,11 +122,11 @@
 
         // 
         jQuery("#year-apptemp-max-ts").text(tzAdjustedMoment(1775216270).format("LLL"));
-        jQuery("#year-apptemp-min-ts").text(tzAdjustedMoment(1775535733).format("LLL"));
+        jQuery("#year-apptemp-min-ts").text(tzAdjustedMoment(1776480351).format("LLL"));
         // 
         // 
         jQuery("#at-apptemp-max-ts").text(tzAdjustedMoment(1775216270).format("LLL"));
-        jQuery("#at-apptemp-min-ts").text(tzAdjustedMoment(1775535733).format("LLL"));
+        jQuery("#at-apptemp-min-ts").text(tzAdjustedMoment(1776480351).format("LLL"));
         // 
 
         jQuery("#year-heatindex-max-ts").text(tzAdjustedMoment(1775216248).format("LLL"));
@@ -154,8 +154,8 @@
         jQuery("#year-rainiest-day-ts").text(tzAdjustedMoment(1775944800).format("LL"));
         jQuery("#at-rainiest-day-ts").text(tzAdjustedMoment(1775944800).format("LL"));
 
-        jQuery("#year-rainRate-max-ts").text(tzAdjustedMoment(1775233608).format("LLL"));
-        jQuery("#at-rainRate-max-ts").text(tzAdjustedMoment(1775233608).format("LLL"));
+        jQuery("#year-rainRate-max-ts").text(tzAdjustedMoment(1776449102).format("LLL"));
+        jQuery("#at-rainRate-max-ts").text(tzAdjustedMoment(1776449102).format("LLL"));
 
         jQuery("#year-outHumidity-max-ts").text(tzAdjustedMoment(1774921800).format("LLL"));
         jQuery("#at-outHumidity-max-ts").text(tzAdjustedMoment(1774921800).format("LLL"));
@@ -166,14 +166,14 @@
         jQuery("#year-dewpoint-max-ts").text(tzAdjustedMoment(1775139682).format("LLL"));
         jQuery("#at-dewpoint-max-ts").text(tzAdjustedMoment(1775139682).format("LLL"));
 
-        jQuery("#year-dewpoint-min-ts").text(tzAdjustedMoment(1775535734).format("LLL"));
-        jQuery("#at-dewpoint-min-ts").text(tzAdjustedMoment(1775535734).format("LLL"));
+        jQuery("#year-dewpoint-min-ts").text(tzAdjustedMoment(1776486600).format("LLL"));
+        jQuery("#at-dewpoint-min-ts").text(tzAdjustedMoment(1776486600).format("LLL"));
 
         jQuery("#year-barometer-max-ts").text(tzAdjustedMoment(1775544962).format("LLL"));
         jQuery("#at-barometer-max-ts").text(tzAdjustedMoment(1775544962).format("LLL"));
 
-        jQuery("#year-barometer-min-ts").text(tzAdjustedMoment(1776413700).format("LLL"));
-        jQuery("#at-barometer-min-ts").text(tzAdjustedMoment(1776413700).format("LLL"));
+        jQuery("#year-barometer-min-ts").text(tzAdjustedMoment(1776430200).format("LLL"));
+        jQuery("#at-barometer-min-ts").text(tzAdjustedMoment(1776430200).format("LLL"));
 
         // 
         jQuery("#year-radiation-max-ts").text(tzAdjustedMoment(1776073167).format("LLL"));
@@ -196,13 +196,13 @@
             jQuery("#at-days-with-rainfall-range-ts").text("---");
         }
 
-        jQuery("#year-days-without-rainfall-ts").text(tzAdjustedMoment(1776376800).format("LL"));
+        jQuery("#year-days-without-rainfall-ts").text(tzAdjustedMoment(1775599200).format("LL"));
         // Take the number of days (4) - 1 and multiply by 86400 (seconds in a day) to get total seconds. Then subtract from the end epoch to give you the epoch "days ago"
         // Removed the year with ", YYYY, or "/YYYY" or ".YYYY" or "-YYYY"
-        if (1776376800 > 0) {
-            var start_day_epoch = 1776376800 - ((4 - 1) * 86400);
-            //jQuery("#at-days-without-rainfall-range-ts").text( tzAdjustedMoment(start_day_epoch).format('LL').replace(/([A-Z])|[, \/\-\.]+\b[0-9]{4}\b/g, '$1') + " - " + tzAdjustedMoment(1776376800).format('LL') );
-            jQuery("#at-days-without-rainfall-range-ts").text(tzAdjustedMoment(start_day_epoch).format('MMMM DD') + " - " + tzAdjustedMoment(1776376800).format('LL'));
+        if (1775599200 > 0) {
+            var start_day_epoch = 1775599200 - ((4 - 1) * 86400);
+            //jQuery("#at-days-without-rainfall-range-ts").text( tzAdjustedMoment(start_day_epoch).format('LL').replace(/([A-Z])|[, \/\-\.]+\b[0-9]{4}\b/g, '$1') + " - " + tzAdjustedMoment(1775599200).format('LL') );
+            jQuery("#at-days-without-rainfall-range-ts").text(tzAdjustedMoment(start_day_epoch).format('MMMM DD') + " - " + tzAdjustedMoment(1775599200).format('LL'));
         } else {
             jQuery("#at-days-without-rainfall-range-ts").text("---");
         }
@@ -220,7 +220,7 @@
         <div class="col-sm-1 wx-stn-info-current-obs">
             <span class="obs-header-icon">
             </span>
-            <span class="obs-header-outtemp">26.2 &#176;C</span>
+            <span class="obs-header-outtemp">12.9 &#176;C</span>
         </div>
         <div class="col-sm-5">
             <div class="wx-stn-name">
@@ -278,9 +278,9 @@
                         </tr>
                         <tr>
                             <td>Lowest Apparent Temperature</td>
-                            <td class="leftborder">8.8 &#176;C</td>
+                            <td class="leftborder">6.6 &#176;C</td>
                             <td id="year-apptemp-min-ts"></td><!-- moment.js -->
-                            <td class="leftborder">8.8 &#176;C</td>
+                            <td class="leftborder">6.6 &#176;C</td>
                             <td id="at-apptemp-min-ts"></td><!-- moment.js -->
                         </tr>
                         <tr>
@@ -359,23 +359,23 @@
                         </tr>
                         <tr>
                             <td>Highest Daily Rain Rate</td>
-                            <td class="leftborder">33.0 mm/hr</td>
+                            <td class="leftborder">33.8 mm/hr</td>
                             <td id="year-rainRate-max-ts"></td><!-- moment.js -->
-                            <td class="leftborder">33.0 mm/hr</td>
+                            <td class="leftborder">33.8 mm/hr</td>
                             <td id="at-rainRate-max-ts"></td><!-- moment.js -->
                         </tr>
                         <tr>
                             <td>Month with Highest Total Rainfall</td>
-                            <td class="leftborder">26.8  mm</td>
+                            <td class="leftborder">30.8  mm</td>
                             <td>April</td>
-                            <td class="leftborder">26.8  mm</td>
+                            <td class="leftborder">30.8  mm</td>
                             <td>April, 2026</td>
                         </tr>
                         <tr>
                             <td>Total Rainfall for</td>
-                            <td class="leftborder">27.6 mm</td>
+                            <td class="leftborder">31.6 mm</td>
                             <td>2026</td>
-                            <td class="leftborder">27.6  mm</td>
+                            <td class="leftborder">31.6  mm</td>
                             <td>2026</td>
                         </tr>
                         <tr>
@@ -426,9 +426,9 @@
                         </tr>
                         <tr>
                             <td>Lowest Dewpoint</td>
-                            <td class="leftborder">7.6 &#176;C</td>
+                            <td class="leftborder">6.2 &#176;C</td>
                             <td id="year-dewpoint-min-ts"></td><!-- moment.js -->
-                            <td class="leftborder">7.6 &#176;C</td>
+                            <td class="leftborder">6.2 &#176;C</td>
                             <td id="at-dewpoint-min-ts"></td><!-- moment.js -->
                         </tr>
 
@@ -449,9 +449,9 @@
                         </tr>
                         <tr>
                             <td>Lowest Barometer</td>
-                            <td class="leftborder">1001.3 mbar</td>
+                            <td class="leftborder">996.0 mbar</td>
                             <td id="year-barometer-min-ts"></td><!-- moment.js -->
-                            <td class="leftborder">1001.3 mbar</td>
+                            <td class="leftborder">996.0 mbar</td>
                             <td id="at-barometer-min-ts"></td><!-- moment.js -->
                         </tr>
 
@@ -511,7 +511,7 @@
 <script type='text/javascript' src='../js/responsive-menu.js'></script>
 
 <!-- Belchertown Skin Version: 1.7beta2-new-belchertown -->
-<!-- Page Generated: 17/04/26 10:20:00 -->
+<!-- Page Generated: 18/04/26 08:10:00 -->
 
 </body>
 
