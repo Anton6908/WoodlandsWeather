@@ -29,15 +29,15 @@ if (getURLvar("debug") && (getURLvar("debug") == "true" || getURLvar("debug") ==
     var belchertown_debug_config = true;
     belchertown_debug("Debug: URL debug variable enabled");
 } else {
-    var belchertown_debug_config = 0;
+    var belchertown_debug_config = 1;
     belchertown_debug("Debug: skin.conf belchertown_debug enabled");
 }
 
 var moment_locale = "en-GB";
 moment.locale(moment_locale);
 
-var graphgroups_raw = {"homepage": ["Rain", "Outdoor", "Indoor", "Wind", "Barometer", "Solar", "avgclimatethisyear"], "yesterday": ["Rain", "Outdoor", "Indoor", "Wind", "Barometer", "Solar"], "day": ["Rain", "Outdoor", "Indoor", "Wind", "Barometer", "Solar"], "week": ["Rain", "Outdoor", "Indoor", "Wind", "Barometer", "Solar"], "month": ["Rain", "Temperature", "Wind", "Barometer", "Solar"], "year": ["Rain", "Temperature", "Wind", "Barometer", "Solar", "avgclimatethisyear"], "2026climate": ["Climate"], "raintotals": ["raintoday", "rainthisweek", "rainthismonth", "rainmonthtotals", "rainyeartotals", "rain2026totals"]};
-var graphgroups_titles = {"homepage": "Homepage", "yesterday": "Yesterday", "day": "Today", "week": "This Week", "month": "This Month", "year": "This Year", "2026climate": "Average Climatological Values for 2026", "raintotals": "Rain Totals by Period"};
+var graphgroups_raw = {"homepage": ["Rain", "Outdoor", "Indoor", "Wind", "Barometer", "Solar", "avgclimatethisyear"], "yesterday": ["Rain", "Outdoor", "Indoor", "Wind", "Barometer", "Solar"], "week": ["Rain", "Outdoor", "Indoor", "Wind", "Barometer", "Solar"], "month": ["Rain", "Temperature", "Wind", "Barometer", "Solar"], "year": ["Rain", "Temperature", "Wind", "Barometer", "Solar", "avgclimatethisyear"], "2026climate": ["Climate"], "raintotals": ["raintoday", "rainthisweek", "rainthismonth", "rainthisyear", "rainyeartotals"]};
+var graphgroups_titles = {"homepage": "Homepage/Today", "yesterday": "Yesterday", "week": "This Week", "month": "Last 30 Days", "year": "This Year", "2026climate": "Average Climatological Values for 2026", "raintotals": "Rain Totals by Period"};
 var graphpage_content = {};
 
 //  declare icon_dict as global variable
@@ -122,7 +122,7 @@ jQuery(document).ready(function() {
             belchertown_debug("Theme: Setting auto theme because of URL override");
             sessionStorage.setItem('theme', 'auto')
             // 
-            autoTheme(17, 47, 6, 37)
+            autoTheme(17, 36, 6, 44)
             // 
         }
     }
@@ -1288,10 +1288,10 @@ function update_forecast_data(data) {
                 }
 
                 // Determine wind units
-                if ("meter_per_second" == "knot") {
+                if ("km_per_hour" == "knot") {
                     windSpeed = data[(forecast_interval)][0]["response"][0]["periods"][i]["windSpeedKTS"];
                     windGust = data[(forecast_interval)][0]["response"][0]["periods"][i]["windGustKTS"];
-                } else if ("meter_per_second" == "beaufort") {
+                } else if ("km_per_hour" == "beaufort") {
                     windSpeed = kts_to_beaufort(data[(forecast_interval)][0]["response"][0]["periods"][i]["windSpeedKTS"]);
                     windGust = kts_to_beaufort(data[(forecast_interval)][0]["response"][0]["periods"][i]["windGustKTS"]);
                 } else if ("ca" == "ca") {
@@ -1405,7 +1405,7 @@ function update_forecast_data(data) {
                     output_html += '</div>';
                     output_html += '<div class="forecast-wind">';
                     output_html += '<i class="wi wi-strong-wind"></i> <span>' + parseFloat(forecast_row[i]["windSpeed"]).toFixed(0) + '</span>';
-                    //  output_html += '<i class="wi wi-strong-wind"></i> <span>'+ parseFloat( forecast_row[i]["windSpeed"] ).toFixed(0) +'</span> | <span> '+ parseFloat( forecast_row[i]["windGust"] ).toFixed(0) +' m/s';        
+                    //  output_html += '<i class="wi wi-strong-wind"></i> <span>'+ parseFloat( forecast_row[i]["windSpeed"] ).toFixed(0) +'</span> | <span> '+ parseFloat( forecast_row[i]["windGust"] ).toFixed(0) +' km/h';        
                     output_html += '</div>';
                     // 
                     output_html += '</div>';
@@ -1449,7 +1449,7 @@ function update_forecast_data(data) {
                     }
                     output_html += '</div>';
                     output_html += '<div class="forecast-wind">';
-                    output_html += '<i class="wi wi-strong-wind"></i> <span>' + parseFloat(forecast_row[i]["windSpeed"]).toFixed(0) + '</span> | <span> ' + parseFloat(forecast_row[i]["windGust"]).toFixed(0) + ' m/s';
+                    output_html += '<i class="wi wi-strong-wind"></i> <span>' + parseFloat(forecast_row[i]["windSpeed"]).toFixed(0) + '</span> | <span> ' + parseFloat(forecast_row[i]["windGust"]).toFixed(0) + ' km/h';
                     output_html += '</div>';
                     // 
                     output_html += '</div>';
@@ -1543,7 +1543,7 @@ function update_forecast_data(data) {
                 html24 += '<span class="forecast-high">' + parseFloat(maxTemp).toFixed(0) + '&deg;</span> | <span class="forecast-low">' + parseFloat(minTemp).toFixed(0) + '&deg;</span>';
                 html24 += '<br>';
                 html24 += '<div class="forecast-wind">';
-                html24 += '<i class="wi wi-strong-wind"></i> <span>' + parseFloat(d["windSpeed"]).toFixed(0) + '</span> | <span> ' + parseFloat(d["windGust"] || 0).toFixed(0) + ' m/s';
+                html24 += '<i class="wi wi-strong-wind"></i> <span>' + parseFloat(d["windSpeed"]).toFixed(0) + '</span> | <span> ' + parseFloat(d["windGust"] || 0).toFixed(0) + ' km/h';
                 html24 += '</div>';
                 html24 += '</div>';
             }

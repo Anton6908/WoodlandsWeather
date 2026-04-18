@@ -1,0 +1,301 @@
+{
+    "belchertown_version": "1.7beta2-new-belchertown",
+    "generated_timestamp": "04/26/2026 15:10:55",
+    "colors": "#7cb5ec, #b2df8a, #f7a35c, #8c6bb1, #dd3497, #e4d354, #268bd2, #f45b5b, #6a3d9a, #33a02c",
+    "chartgroup_title": "Rainfall Comparison by Year",
+    "tooltip_date_format": "LLL",
+    "credits": "highcharts_default",
+    "credits_url": "highcharts_default",
+    "credits_position": "highcharts_default",
+    "YearlyRain": {
+        "series": {
+            "rainTotal": {
+                "obsType": "rainTotal",
+                "yAxis_label": "Total Rainfall (mm)",
+                "polar": "false",
+                "name": "Total Rainfall",
+                "color": "#438bd6",
+                "rounding": 1.0,
+                "data": [
+                    551.0448466,
+                    724.0917446000003,
+                    955.9088831999994,
+                    834.1674960000021,
+                    600.8918639999997,
+                    577.0229760000007,
+                    741.0004992000004,
+                    447.45008300000006,
+                    281.9804875999996,
+                    0.0,
+                    763.514830599999,
+                    613.9446445999994,
+                    730.9933056,
+                    230.61674867921977
+                ]
+            },
+            "rainTotal_2009": {
+                "obsType": "rainTotal_2009",
+                "yAxis_label": "2009 (mm)",
+                "polar": "false",
+                "observation_type": "rainTotal",
+                "name": 2009.0,
+                "time_length": "year_specific",
+                "year_specific": 2009.0,
+                "color": "#7cb5ec",
+                "rounding": 1.0,
+                "data": [
+                    551.0448466
+                ]
+            },
+            "rainTotal_2010": {
+                "obsType": "rainTotal_2010",
+                "yAxis_label": "2010 (mm)",
+                "polar": "false",
+                "observation_type": "rainTotal",
+                "name": 2010.0,
+                "time_length": "year_specific",
+                "year_specific": 2010.0,
+                "color": "#b2df8a",
+                "rounding": 1.0,
+                "data": [
+                    724.0917446000003
+                ]
+            },
+            "rainTotal_2011": {
+                "obsType": "rainTotal_2011",
+                "yAxis_label": "2011 (mm)",
+                "polar": "false",
+                "observation_type": "rainTotal",
+                "name": 2011.0,
+                "time_length": "year_specific",
+                "year_specific": 2011.0,
+                "color": "#f7a35c",
+                "rounding": 1.0,
+                "data": [
+                    955.9088831999994
+                ]
+            },
+            "rainTotal_2012": {
+                "obsType": "rainTotal_2012",
+                "yAxis_label": "2012 (mm)",
+                "polar": "false",
+                "observation_type": "rainTotal",
+                "name": 2012.0,
+                "time_length": "year_specific",
+                "year_specific": 2012.0,
+                "color": "#8c6bb1",
+                "rounding": 1.0,
+                "data": [
+                    834.1674960000021
+                ]
+            },
+            "rainTotal_2013": {
+                "obsType": "rainTotal_2013",
+                "yAxis_label": "2013 (mm)",
+                "polar": "false",
+                "observation_type": "rainTotal",
+                "name": 2013.0,
+                "time_length": "year_specific",
+                "year_specific": 2013.0,
+                "color": "#dd3497",
+                "rounding": 1.0,
+                "data": [
+                    600.8918639999997
+                ]
+            },
+            "rainTotal_2014": {
+                "obsType": "rainTotal_2014",
+                "yAxis_label": "2014 (mm)",
+                "polar": "false",
+                "observation_type": "rainTotal",
+                "name": 2014.0,
+                "time_length": "year_specific",
+                "year_specific": 2014.0,
+                "color": "#e4d354",
+                "rounding": 1.0,
+                "data": [
+                    577.0229760000007
+                ]
+            },
+            "rainTotal_2015": {
+                "obsType": "rainTotal_2015",
+                "yAxis_label": "2015 (mm)",
+                "polar": "false",
+                "observation_type": "rainTotal",
+                "name": 2015.0,
+                "time_length": "year_specific",
+                "year_specific": 2015.0,
+                "color": "#268bd2",
+                "rounding": 1.0,
+                "data": [
+                    741.0004992000004
+                ]
+            },
+            "rainTotal_2016": {
+                "obsType": "rainTotal_2016",
+                "yAxis_label": "2016 (mm)",
+                "polar": "false",
+                "observation_type": "rainTotal",
+                "name": 2016.0,
+                "time_length": "year_specific",
+                "year_specific": 2016.0,
+                "color": "#f45b5b",
+                "rounding": 1.0,
+                "data": [
+                    447.45008300000006
+                ]
+            },
+            "rainTotal_2017": {
+                "obsType": "rainTotal_2017",
+                "yAxis_label": "2017 (mm)",
+                "polar": "false",
+                "observation_type": "rainTotal",
+                "name": 2017.0,
+                "time_length": "year_specific",
+                "year_specific": 2017.0,
+                "color": "#6a3d9a",
+                "rounding": 1.0,
+                "data": [
+                    281.9804875999996
+                ]
+            },
+            "rainTotal_2018": {
+                "obsType": "rainTotal_2018",
+                "yAxis_label": "2018 (mm)",
+                "polar": "false",
+                "observation_type": "rainTotal",
+                "name": 2018.0,
+                "time_length": "year_specific",
+                "year_specific": 2018.0,
+                "color": "#33a02c",
+                "rounding": 1.0,
+                "data": []
+            },
+            "rainTotal_2019": {
+                "obsType": "rainTotal_2019",
+                "yAxis_label": "2019 (mm)",
+                "polar": "false",
+                "observation_type": "rainTotal",
+                "name": 2019.0,
+                "time_length": "year_specific",
+                "year_specific": 2019.0,
+                "color": "#ffc83f",
+                "rounding": 1.0,
+                "data": []
+            },
+            "rainTotal_2020": {
+                "obsType": "rainTotal_2020",
+                "yAxis_label": "2020 (mm)",
+                "polar": "false",
+                "observation_type": "rainTotal",
+                "name": 2020.0,
+                "time_length": "year_specific",
+                "year_specific": 2020.0,
+                "color": "#90ed7d",
+                "rounding": 1.0,
+                "data": []
+            },
+            "rainTotal_2021": {
+                "obsType": "rainTotal_2021",
+                "yAxis_label": "2021 (mm)",
+                "polar": "false",
+                "observation_type": "rainTotal",
+                "name": 2021.0,
+                "time_length": "year_specific",
+                "year_specific": 2021.0,
+                "color": "#f7a35c",
+                "rounding": 1.0,
+                "data": []
+            },
+            "rainTotal_2022": {
+                "obsType": "rainTotal_2022",
+                "yAxis_label": "2022 (mm)",
+                "polar": "false",
+                "observation_type": "rainTotal",
+                "name": 2022.0,
+                "time_length": "year_specific",
+                "year_specific": 2022.0,
+                "color": "#8c6bb1",
+                "rounding": 1.0,
+                "data": [
+                    0.0
+                ]
+            },
+            "rainTotal_2023": {
+                "obsType": "rainTotal_2023",
+                "yAxis_label": "2023 (mm)",
+                "polar": "false",
+                "observation_type": "rainTotal",
+                "name": 2023.0,
+                "time_length": "year_specific",
+                "year_specific": 2023.0,
+                "color": "#dd3497",
+                "rounding": 1.0,
+                "data": [
+                    763.514830599999
+                ]
+            },
+            "rainTotal_2024": {
+                "obsType": "rainTotal_2024",
+                "yAxis_label": "2024 (mm)",
+                "polar": "false",
+                "observation_type": "rainTotal",
+                "name": 2024.0,
+                "time_length": "year_specific",
+                "year_specific": 2024.0,
+                "color": "#e4d354",
+                "rounding": 1.0,
+                "data": [
+                    613.9446445999994
+                ]
+            },
+            "rainTotal_2025": {
+                "obsType": "rainTotal_2025",
+                "yAxis_label": "2025 (mm)",
+                "polar": "false",
+                "observation_type": "rainTotal",
+                "name": 2025.0,
+                "time_length": "year_specific",
+                "year_specific": 2025.0,
+                "color": "#268bd2",
+                "rounding": 1.0,
+                "data": [
+                    730.9933056
+                ]
+            },
+            "rainTotal_2026": {
+                "obsType": "rainTotal_2026",
+                "yAxis_label": "2026 (mm)",
+                "polar": "false",
+                "observation_type": "rainTotal",
+                "name": 2026.0,
+                "time_length": "year_specific",
+                "year_specific": 2026.0,
+                "color": "#ff0000",
+                "rounding": 1.0,
+                "data": [
+                    230.61674867921977
+                ]
+            }
+        },
+        "options": {
+            "renderTo": "YearlyRain",
+            "chart_group": "rainyearcomparison",
+            "title": "Rainfall Comparison by Year",
+            "subtitle": "",
+            "type": "column",
+            "gapsize": 300000,
+            "connectNulls": "false",
+            "xAxis_categories": [
+                "2026"
+            ],
+            "plot_tooltip_date_format": "LLL",
+            "css_width": "",
+            "css_height": "",
+            "legend": "true",
+            "exporting": "false",
+            "yAxis_label": "2026 (mm)",
+            "css_class": null
+        }
+    }
+}

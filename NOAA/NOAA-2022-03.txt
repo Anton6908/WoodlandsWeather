@@ -1,0 +1,47 @@
+                   MONTHLY CLIMATOLOGICAL SUMMARY for Mar 2022
+
+
+NAME: Woodlands Farm, N2, Grahamstown, EC, South Africa                  
+ELEV: 652 meters    LAT: 33-16.40 S    LONG: 026-37.40 E
+
+
+                   TEMPERATURE (°C), RAIN (mm), WIND SPEED (km/h)
+
+                                         HEAT   COOL         AVG
+      MEAN                               DEG    DEG          WIND                   DOM
+DAY   TEMP   HIGH   TIME    LOW   TIME   DAYS   DAYS   RAIN  SPEED   HIGH   TIME    DIR
+---------------------------------------------------------------------------------------
+ 01    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 02    N/A    N/A N/A    N/A N/A    0.0    0.0    0.1    N/A    N/A N/A    N/A
+ 03    N/A    N/A N/A    N/A N/A    0.0    0.0   27.9    N/A    N/A N/A    N/A
+ 04    N/A    N/A N/A    N/A N/A    0.0    0.0    1.0    N/A    N/A N/A    N/A
+ 05    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 06    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 07    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 08    N/A    N/A N/A    N/A N/A    0.0    0.0    3.5    N/A    N/A N/A    N/A
+ 09    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 10    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 11    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 12    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 13    N/A    N/A N/A    N/A N/A    0.0    0.0   11.0    N/A    N/A N/A    N/A
+ 14    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 15    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 16    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 17    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 18    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 19    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 20    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 21    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 22    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 23    N/A    N/A N/A    N/A N/A    0.0    0.0    0.1    N/A    N/A N/A    N/A
+ 24    N/A    N/A N/A    N/A N/A    0.0    0.0   16.0    N/A    N/A N/A    N/A
+ 25    N/A    N/A N/A    N/A N/A    0.0    0.0   10.0    N/A    N/A N/A    N/A
+ 26    N/A    N/A N/A    N/A N/A    0.0    0.0    0.5    N/A    N/A N/A    N/A
+ 27    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 28    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 29    N/A    N/A N/A    N/A N/A    0.0    0.0   13.0    N/A    N/A N/A    N/A
+ 30    N/A    N/A N/A    N/A N/A    0.0    0.0    0.0    N/A    N/A N/A    N/A
+ 31    N/A    N/A N/A    N/A N/A    0.0    0.0    8.0    N/A    N/A N/A    N/A
+---------------------------------------------------------------------------------------
+       N/A    N/A    N/A    N/A    N/A    0.0    0.0   91.0    N/A    N/A    N/A N/A
+    

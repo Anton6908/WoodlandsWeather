@@ -5,7 +5,7 @@
     "colors": "#7cb5ec, #b2df8a, #f7a35c, #8c6bb1, #dd3497, #e4d354, #268bd2, #f45b5b, #6a3d9a, #33a02c",
     "tooltip_date_format": "LLL",
     "homepage": {
-        "title": "Homepage",
+        "title": "Homepage/Today",
         "show_button": "true",
         "button_text": "Homepage",
         "time_length": "today",
@@ -254,110 +254,6 @@
             }
         }
     },
-    "day": {
-        "title": "Today",
-        "show_button": "true",
-        "button_text": "Today",
-        "time_length": "today",
-        "tooltip_date_format": "LLL",
-        "gapsize": "300000",
-        "connectNulls": "true",
-        "Rain": {
-            "title": "Rain",
-            "rainRate": {
-                "yAxis": "1"
-            },
-            "rainTotal": {
-                "name": "Rain Total"
-            }
-        },
-        "Outdoor": {
-            "title": "Outdoor",
-            "outTemp": {
-                "zIndex": "1",
-                "name": "Temperature"
-            },
-            "windchill": {},
-            "dewpoint": {
-                "color": "purple"
-            },
-            "outHumidity": {
-                "yAxis": "1",
-                "yaxis_min": "1",
-                "yaxis_max": "99",
-                "color": "#91e8e1"
-            }
-        },
-        "Indoor": {
-            "title": "Indoor",
-            "inTemp": {
-                "zIndex": "1",
-                "name": "Indoor Temperature"
-            },
-            "inHumidity": {
-                "yAxis": "1",
-                "yaxis_min": "1",
-                "yaxis_max": "99",
-                "color": "#91e8e1"
-            }
-        },
-        "Wind": {
-            "title": "Wind Speed and Direction",
-            "yaxis_min": "0",
-            "windDir": {
-                "zIndex": "1",
-                "yAxis": "1",
-                "yaxis_max": "360",
-                "lineWidth": "0",
-                "marker": {
-                    "enabled": "true"
-                },
-                "states": {
-                    "hover": {
-                        "lineWidthPlus": 0.0
-                    }
-                }
-            },
-            "windGust": {},
-            "windSpeed": {
-                "zIndex": "2"
-            }
-        },
-        "Barometer": {
-            "title": "Barometer",
-            "type": "spline",
-            "barometer": {
-                "color": "#BECC00"
-            }
-        },
-        "Solar": {
-            "title": "Solar Radiation & UV",
-            "type": "areaspline",
-            "yAxis_label": "Solar Radiation (W/m\u00b2)",
-            "radiation": {
-                "name": "Solar Radiation",
-                "color": "#ffc83f",
-                "zIndex": "2",
-                "fillOpacity": "0.65"
-            },
-            "maxSolarRad": {
-                "name": "Theoretical Max",
-                "type": "area",
-                "color": "#ffe680",
-                "fillOpacity": "0.30",
-                "zIndex": "1"
-            },
-            "UV": {
-                "name": "UV Index",
-                "color": "#90ed7d",
-                "zIndex": "3",
-                "yAxis": "1",
-                "yAxis_label": "UV Index",
-                "yAxis_min": "0",
-                "yAxis_max": "12"
-            }
-        }
-    },
     "week": {
         "title": "This Week",
         "show_button": "true",
@@ -466,9 +362,9 @@
         }
     },
     "month": {
-        "title": "This Month",
+        "title": "Last 30 Days",
         "show_button": "true",
-        "button_text": "Month",
+        "button_text": "Last 30 Days",
         "type": "spline",
         "time_length": "2592000",
         "tooltip_date_format": "dddd LL",
@@ -754,7 +650,7 @@
         "button_text": "Rain Totals",
         "type": "column",
         "time_length": "all",
-        "aggregate_type": "max",
+        "aggregate_type": "sum",
         "aggregate_interval": "86400",
         "raintoday": {
             "title": "Rain Today",
@@ -809,6 +705,13 @@
             "aggregate_type": "sum",
             "aggregate_interval": "86400",
             "tooltip_date_format": "dddd DD MMM",
+            "xAxis_tickInterval": "86400000",
+            "xAxis_minTickInterval": "86400000",
+            "xAxis_labels_step": "1",
+            "xAxis_labels_rotation": "-45",
+            "xAxis_labels_format": "%d",
+            "pointPlacement": "0",
+            "pointRange": "86400000",
             "rain": {
                 "name": "Rain per day (mm)",
                 "color": "#438bd6",
@@ -819,14 +722,21 @@
                 "type": "line",
                 "color": "#ff0000",
                 "zIndex": "3",
-                "lineWidth": "3"
+                "lineWidth": "3",
+                "aggregate_type": "max",
+                "aggregate_interval": "86400"
             }
         },
-        "rainmonthtotals": {
-            "title": "Historical Rain Totals By Month",
-            "subtitle": "Rain Totals for All Months for All Time",
-            "xaxis_groupby": "month",
-            "xaxis_categories": [
+        "rainthisyear": {
+            "title": "Rain This Year",
+            "subtitle": "Monthly bars + cumulative total (Jan\u2013Dec)",
+            "type": "column",
+            "time_length": "year",
+            "gapsize": "86400000",
+            "aggregate_type": "sum",
+            "aggregate_interval": "86400",
+            "xAxis_groupby": "month",
+            "xAxis_categories": [
                 "Jan",
                 "Feb",
                 "Mar",
@@ -840,38 +750,41 @@
                 "Nov",
                 "Dec"
             ],
+            "tooltip_date_format": "MMMM yyyy",
+            "pointPadding": "0.1",
+            "groupPadding": "0.05",
+            "borderWidth": "0",
+            "rain": {
+                "name": "Rain per month (mm)",
+                "color": "#438bd6",
+                "yAxis_min": "0"
+            },
             "rainTotal": {
-                "name": "Rain Total"
+                "name": "Cumulative Rain This Year (mm)",
+                "type": "line",
+                "color": "#ff0000",
+                "zIndex": "3",
+                "lineWidth": "3",
+                "aggregate_type": "last",
+                "cumulative": "true"
             }
         },
         "rainyeartotals": {
             "title": "Historical Rain Totals By Year",
-            "xaxis_groupby": "year",
+            "subtitle": "Annual rainfall totals by year",
+            "type": "column",
+            "time_length": "all",
+            "aggregate_type": "sum",
+            "aggregate_interval": "86400",
+            "xAxis_groupby": "year",
+            "tooltip_date_format": "YYYY",
+            "pointPadding": "0.1",
+            "groupPadding": "0.05",
+            "borderWidth": "0",
             "rainTotal": {
-                "name": "Rain Total"
-            }
-        },
-        "rain2026totals": {
-            "title": "Rain Totals for 2026",
-            "xaxis_groupby": "month",
-            "xaxis_categories": [
-                "Jan",
-                "Feb",
-                "Mar",
-                "Apr",
-                "May",
-                "Jun",
-                "Jul",
-                "Aug",
-                "Sep",
-                "Oct",
-                "Nov",
-                "Dec"
-            ],
-            "time_length": "year_specific",
-            "year_specific": "2026",
-            "rainTotal": {
-                "name": "Rain Total"
+                "name": "Annual Rain Total (mm)",
+                "color": "#438bd6",
+                "yAxis_min": "0"
             }
         }
     }
