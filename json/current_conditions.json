@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"timestamp": 1776491435, "current": [{"success": true, "error": {"code": "warn_no_data", "description": "Valid request. No results available based on your query parameters."}, "response": []}]}
+=======
+{"timestamp": 1776480329, "current": [{"success": true, "error": {"code": "warn_no_data", "description": "Valid request. No results available based on your query parameters."}, "response": []}]}
+>>>>>>> 3a904feb6aa8af623e9d4dc8384086968f3f8896
